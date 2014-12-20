@@ -12,7 +12,9 @@ Also interested in how (cypher-stream)[https://github.com/brian-gates/cypher-str
 ```sh
 $ git clone https://github.com/momiller121/cypher2ldap.git
 ```
-
+```sh
+cd cypher2ldap
+```
 ```sh
 $ npm install
 $ npm start
