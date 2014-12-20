@@ -19,7 +19,7 @@ cd cypher2ldap
 $ npm install
 $ npm start
 ```
-Nothing but the 'hello world' for ldapsj yet...
+Nothing but the 'hello world' for ldapjs yet...
 ```sh
 $ ldapsearch -H ldap://localhost:1389 -x -b o=example objectclass=*
 ```
