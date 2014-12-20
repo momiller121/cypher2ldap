@@ -3,12 +3,13 @@ cypher2ldap
 
 Experimenting with fronting Neo4J with an LDAP interface using node.js.
 
-###NOTHING TO SEE HERE
+###NOT MUCH TO SEE HERE YET
 This is all pie in sky at this point - exploration only.
 
-What happens if we wrap the [neo4j](http://neo4j.com/) [rest interface](https://www.npmjs.com/package/neo4j) with [ldapjs](http://ldapjs.org/)..?
+What happens if we wrap [neo4j-community-2.1.6](http://neo4j.com/) with [ldapjs](http://ldapjs.org/) via
+ [cypher-stream](https://github.com/brian-gates/cypher-stream)?
 
-Also interested in how [cypher-stream](https://github.com/brian-gates/cypher-stream) fits here.
+The following assumes that you have neo4j-community-2.1.6 running and one node with a :name attribute.
 
 ```sh
 $ git clone https://github.com/momiller121/cypher2ldap.git
@@ -20,7 +21,7 @@ cd cypher2ldap
 $ npm install
 $ npm start
 ```
-Nothing but the 'hello world' for ldapjs yet...
+Nothing but the helloworld for ldapjs wrapped around helloworld for cypher-stream yet...
 ```sh
 $ ldapsearch -H ldap://localhost:1389 -x -b o=example objectclass=*
 ```
@@ -37,6 +38,7 @@ dn: o=example<br/>
 objectclass: organization<br/>
 objectclass: top<br/>
 o: example<br/>
+givenName: Mark <--THIS originates from the cypher query<br/>
 <br/>
 # search result<br/>
 search: 2<br/>
