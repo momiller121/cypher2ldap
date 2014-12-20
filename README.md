@@ -7,6 +7,7 @@ Experimenting with fronting Neo4J with an LDAP interface using node.js.
 This is all pie in sky at this point - exploration only.
 
 What happens if we wrap the [neo4j](http://neo4j.com/) [rest interface](https://www.npmjs.com/package/neo4j) with [ldapjs](http://ldapjs.org/)..?
+Also interested in how (cypher-stream)[https://github.com/brian-gates/cypher-stream] fits here.
 
 ```sh
 $ git clone https://github.com/momiller121/cypher2ldap.git
