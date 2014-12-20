@@ -38,7 +38,7 @@ dn: o=example<br/>
 objectclass: organization<br/>
 objectclass: top<br/>
 o: example<br/>
-givenName: Mark <--THIS originates from the cypher query<br/>
+givenName: Mark &lt;--THIS originates from the cypher query<br/>
 <br/>
 # search result<br/>
 search: 2<br/>
